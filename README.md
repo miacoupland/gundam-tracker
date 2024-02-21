@@ -11,6 +11,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   - Built (checkbox)
   - Cost (number input)
   - Grade (dropdown)
+  - Additional notes (free text)
 - Any not collected will go into wishlist...?
 - Gallery for built models
 - Gundam themed layout/colour scheme
+
+## Future considerations
+- Bulk import CSV
+- Export to CSV
+- Additional images
