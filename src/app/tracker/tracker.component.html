@@ -1,0 +1,32 @@
+<form [formGroup]="gundamForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Name/Model Number: </label>
+    <input id="name" type="text" formControlName="name" />
+  </div>
+  <div>
+    <label for="universe">Universe: </label>
+    <input id="universe" type="select" formControlName="universe" />
+  </div>
+  <div class="collected-section">
+    <label for="collected">Collected: </label>
+    <input id="collected" type="checkbox" formControlName="collected" />
+  </div>
+  <div class="built-section">
+    <label for="built">Built? </label>
+    <input id="built" type="checkbox" formControlName="built" />
+  </div>
+  <div>
+    <label for="cost">Cost: </label>
+    <input id="cost" type="select" formControlName="cost" />
+  </div>
+  <div class="image-section">
+    <label for="image-url">Image URL: </label>
+    <input id="image-url" type="text" formControlName="imageUrl">
+  </div>
+  <div class="notes-section">
+    <label for="notes">Notes: </label>
+    <input id="notes" type="textarea" formControlName="notes" />
+  </div>
+  <button type="submit" [disabled]="!gundamForm.valid">Save</button>
+  <!-- <button type="button" (click)="cancel()">Cancel</button> -->
+</form>
