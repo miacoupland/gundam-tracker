@@ -7,12 +7,7 @@ export const localStorageReducer = (reducer: ActionReducer<AppState>): ActionRed
 
     if (localState && action.type === INIT) {
       try {
-        const appState = JSON.parse(localState);
-        const stateKeys = Object.keys(appState);
-        const tracker = stateKeys.includes('tracker');
-        // const auth = stateKeys.includes('auth');
-
-        return appState;
+        return JSON.parse(localState);
       } catch (e) {
         localStorage.removeItem('state');
       }
